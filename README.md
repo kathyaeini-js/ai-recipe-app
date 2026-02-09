@@ -1,0 +1,124 @@
+# 🍽️ AI-Based Recipe Recommendation & Nutrition Analyzer
+
+An AI-powered web application that recommends recipes based on user-provided ingredients.  
+The application fetches real-time recipe data and displays detailed cooking methods in an interactive UI inspired by food delivery platforms like **Swiggy** and **Zomato**.
+
+---
+
+## 🚀 Features
+
+- 🔍 Ingredient-based recipe search
+- 🖼️ Recipe cards with images and titles
+- 🧑‍🍳 Clickable recipe cards to view **cooking method**
+- 🌐 Real-time data from Spoonacular API
+- ⚡ Full-stack architecture (React + Node.js)
+- 📱 Responsive and user-friendly UI
+
+---
+
+## 🧠 How It Works
+
+1. User enters ingredients (e.g., `egg, tomato`)
+2. Frontend sends request to backend API
+3. Backend fetches matching recipes from Spoonacular
+4. Recipes are displayed as cards
+5. On clicking a recipe card:
+   - Detailed cooking instructions are shown in a modal popup
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Axios
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- Axios
+- CORS
+
+### API
+- Spoonacular Recipe API
+
+---
+
+## 📂 Project Structure
+
+ai-recipe-app/
+│
+├── frontend/        (React App)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── IngredientInput.jsx
+│   │   │   ├── RecipeCard.jsx
+│   │   │   ├── Nutrition.jsx
+│   │   │   └── Navbar.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Favorites.jsx
+│   │   │   └── DietPlan.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   └── package.json
+│
+├── backend/         (Node + Express)
+│   ├── models/
+│   │   └── Recipe.js
+│   │
+│   ├── routes/
+│   │   ├── recipeRoutes.js
+│   │   └── favoriteRoutes.js
+│   │
+│   ├── controllers/
+│   │   └── recipeController.js
+│   │
+│   ├── server.js
+│   └── package.json
+│
+├── ml-model/        (Python AI logic)
+│   ├── recipe_model.py
+│   └── requirements.txt
+│
+└── README.md
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Start Backend
+
+```bash
+cd backend
+npm install
+node server.js
+
+http://localhost:5000
+
+cd frontend
+npm install
+npm start
+
+http://localhost:3000
+
+🔑 API Key Setup
+
+Uses Spoonacular API
+
+API key is configured in the backend
+
+Ensure valid API quota is available
+
+👩‍💻 Author
+
+Kathyaeini J S
+Computer Science Engineering
+AI-Based Recipe Recommendation Project
