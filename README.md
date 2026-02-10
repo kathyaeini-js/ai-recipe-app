@@ -1,7 +1,7 @@
 # 🍽️ AI-Based Recipe Recommendation & Nutrition Analyzer
 
 An AI-powered web application that recommends recipes based on user-provided ingredients.  
-The application fetches real-time recipe data and displays detailed cooking methods in an interactive UI inspired by food delivery platforms like **Swiggy** and **Zomato**.
+The application fetches real-time recipe data and displays detailed cooking methods in an interactive UI.
 
 ---
 
@@ -22,8 +22,6 @@ The application fetches real-time recipe data and displays detailed cooking meth
 2. Frontend sends request to backend API
 3. Backend fetches matching recipes from Spoonacular
 4. Recipes are displayed as cards
-5. On clicking a recipe card:
-   - Detailed cooking instructions are shown in a modal popup
 
 ---
 
