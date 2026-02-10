@@ -47,21 +47,44 @@ The application fetches real-time recipe data and displays detailed cooking meth
 
 ai-recipe-app/
 │
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── services/
-│ │ ├── App.js
-│ │ └── index.js
-│ └── package.json
+├── frontend/        (React App)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── IngredientInput.jsx
+│   │   │   ├── RecipeCard.jsx
+│   │   │   ├── Nutrition.jsx
+│   │   │   └── Navbar.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Favorites.jsx
+│   │   │   └── DietPlan.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   └── package.json
 │
-├── backend/
-│ ├── routes/
-│ ├── controllers/
-│ ├── models/
-│ ├── server.js
-│ └── package.json
+├── backend/         (Node + Express)
+│   ├── models/
+│   │   └── Recipe.js
+│   │
+│   ├── routes/
+│   │   ├── recipeRoutes.js
+│   │   └── favoriteRoutes.js
+│   │
+│   ├── controllers/
+│   │   └── recipeController.js
+│   │
+│   ├── server.js
+│   └── package.json
+│
+├── ml-model/        (Python AI logic)
+│   ├── recipe_model.py
+│   └── requirements.txt
 │
 └── README.md
 
