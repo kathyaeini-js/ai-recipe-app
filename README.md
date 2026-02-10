@@ -101,7 +101,7 @@ npm install
 node server.js
 Backend runs on:
 
-http://localhost:5000
+[http://localhost:5000](http://localhost:5000/api/recipes?ingredients=egg,tomato)
 2️⃣ Start Frontend
 cd frontend
 npm install
